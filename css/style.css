@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+/* Classes Funcionais */
+
+.center{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+/*********************/
+
+.main{
+    height: 800px;
+    background-image: url(../images/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.z-index{
+    position: relative;
+    z-index: 1;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    position: absolute;
+    height: 800px;
+    z-index: 1;
+}
+
+.logo{
+    padding: 40px 0px 10px 0px;
+    font-weight: bold;
+    font-size: 23px;
+    color: #fff;
+}
+
+.logo{
+    border-bottom: 1px solid #fff;
+}
+
+.social-media{
+    float: right;
+    
+}
+
+.social-media i{
+    color: #fff;
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+    padding: 0px 15px;
+}
+
+.desktop{
+    float: right;
+    display: block;
+    position: relative;
+    top: -40px;
+}
+
+.mobile{
+    display: none;
+}
+
+.slice{
+    display: none;
+}
+
+.desktop li{
+    float: left;
+    padding: 0px 10px 0px 30px;
+    list-style-type: none;
+}
+
+.desktop a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.chamada-main{
+    margin-top: 90px; 
+}
+
+.chamada-main h2{
+    color: #fff;
+    font-size: 44px;
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+
+.chamada-main p{
+    max-width: 700px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.chamada-main a{
+    background-color: rgb(38, 146, 255);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.btn-chamada a{
+    display: block;
+    line-height: 44px;
+    width: 177px;
+    height: 44px;
+}
+
+.header-planoh2{
+    width: 100%;
+    padding: 30px 0;
+    background-color: #ccc;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: rgb(38, 146, 255);
+}
+
+.header-planoh2 h2{
+    display: inline-block;
+    font-weight: lighter;
+    border-top: 2px solid rgb(38, 146, 255); 
+}
+
+.plano-wraper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.plano-single{
+    width: 33.3%;
+    width: 320px;
+    height: 300px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 5px 1px 11px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 1px 11px -2px rgba(0,0,0,0.75);
+    box-shadow: 5px 1px 11px -2px rgba(0,0,0,0.75);
+}
+
+.header-plano h2{
+    background-color: rgb(43, 149, 255);
+    text-align: center;
+    padding: 5px;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.plano-detalhes p{
+    padding: 10px;
+    color: #777;
+    font-size: 17px;
+}
+
+.plano-detalhes i{
+    padding: 0 5px;
+}
+
+.plano-valor{
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+.plano-valor h2{
+    font-size: 22px;
+    width: 110px;
+    margin: 0 auto;
+    font-weight: 300;
+    color: #888;
+    border-top: 1px solid #888;;
+}
+
+section.section-sobre{
+    position: relative;
+    width: 100%;
+    padding: 40px 0;
+    min-height: 300px;
+    background-image: url(../images/bg_parallax.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+section.section-sobre h2{
+    text-align: center;
+}
+
+section.section-sobre p{
+    margin-top: 15px;
+}
+
+section.section-sobre > .center{
+    color: #fff;
+    max-width: 960px;
+    position: relative;
+    z-index: 2;
+}
+
+.overlay-parallax{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 0.6);
+    z-index: 1;
+}
+
+section.section-form{
+    margin-top: 80px;
+    width: 100%;
+    height: 100%;
+}
+
+section.section-form h2{
+    margin-bottom: 20px;
+    color: #777;
+    font-weight: lighter;
+}
+
+.borda{
+    border: 1px solid #777;
+    width: 45px;
+}
+
+.w50{
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+    margin: 30px 0;
+}
+
+.section-form input{
+    margin-bottom: 15px;
+}
+
+.section-form input:not([type=submit]){
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+}
+
+.section-form textarea{
+    width: 100%;
+    height: 80px;
+    resize: vertical;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.section-form input[type=submit]{
+    width: 100px;
+    height: 35px;
+    background-color: rgb(38, 146, 255);
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.box-wraper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+
+.box-single{
+    width: 48%;
+    border: 1px solid #ccc;
+    min-height: 210px;
+    -webkit-box-shadow: 7px 5px 8px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 5px 8px -6px rgba(0,0,0,0.75);
+    box-shadow: 7px 5px 8px -6px rgba(0,0,0,0.75);
+}
+
+.info-usuario{
+    display: inline-block;
+    position: relative;
+    margin: 0 2%;
+    top: -15px;
+}
+
+.info-usuario h3{
+    color: #777;
+    font-size: 16px;
+}
+
+.info-usuario p{
+    color: #777;
+}
+
+.descricao-usuario{
+    padding: 15px;
+    border-top: 2px solid #ccc;
+    font-size: 15px;
+    font-weight: 300;
+    color: #ccc;
+}
+
+.box-single .avatar{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 25px;
+    background-color: #ccc;
+    display: inline-block;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #777;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px){
+    .w50{
+        width: 100%;
+    }
+
+    .box-single{
+        width: 100%;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .slice{
+        display: block;
+    }
+
+    .chamada-main{
+        margin-top: 30px;
+    }
+
+    .slice i{
+        color: #fff;
+        position: absolute;
+        right: 0;
+        top: 70px;
+        cursor: pointer;
+        font-size: 28px;
+    }
+
+    .mobile ul li{
+        text-align: center;
+        background-color: #fff;
+        padding: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+        border: 1px solid #777;
+    }
+
+    .mobile ul li:hover{
+        background-color: #ccc;
+        padding: 10px;
+    }
+
+    .mobile ul li a{
+       color: #777;
+       text-decoration: none;
+       font-size: 15px;
+    }}
